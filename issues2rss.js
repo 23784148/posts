@@ -5,11 +5,10 @@ const axios = require( 'axios' );
 
 (async () => {
   try {
-    //const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+    const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const token = process.env.GITHUB_TOKEN;
     const { owner, repo } = process.env.GITHUB_REPOSITORY.split( '/' );
 
-    /*
     const {
         data
     } = await octokit.rest.users.getAuthenticated();
@@ -21,8 +20,8 @@ const axios = require( 'axios' );
         repo,
         per_page: 10,
     });
-    */
 
+    /*
     const query = `
         query {
             repository(owner: "${owner}", name: "${repo}") {
@@ -57,6 +56,7 @@ const axios = require( 'axios' );
     );
 
     const issues = response.data.data.repository.issues.edges;
+    */
 
     /*
     issues.forEach( issue => {
