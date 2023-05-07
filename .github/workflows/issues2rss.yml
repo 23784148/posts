@@ -32,4 +32,4 @@ jobs:
           git config user.email "kenshin726@hotmail.com"
           git add -A
           git commit -m "Update RSS feed with new issue"
-          git push origin gh-pages # 将更改推送到 gh-pages 分支
+          git push
