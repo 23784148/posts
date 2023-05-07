@@ -10,9 +10,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          ref: 'gh-pages' # 检出 gh-pages 分支
-          fetch-depth: 0 # 获取完整提交历史，以便推送
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
