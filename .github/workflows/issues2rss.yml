@@ -23,8 +23,9 @@ jobs:
         run: node issues2rss.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPO: ${{ secrets.REPOSITORY }}
-          GITHUB_OWNER: ${{ secrets.OWNER }}
+          TOKEN: ${{ secrets.TOKEN }}
+          OWNER: ${{ vars.OWNER }}
+          REPO: ${{ vars.REPO }}
 
       - name: Commit and push changes
         run: |

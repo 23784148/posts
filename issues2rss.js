@@ -11,7 +11,7 @@ const axios = require( 'axios' );
           owner = repos[0],
           repo  = repos[1];
 
-    console.log( 'asdadfasd', token, owner, repo, process.env.GITHUB_REPOSITORY )
+    console.log( 'asdadfasd', token, owner, repo, process.env.TOKEN, process.env.OWNER, process.env.REPO )
 
     /*
     const {
