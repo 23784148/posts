@@ -6,10 +6,10 @@ const axios = require( 'axios' );
 (async () => {
   try {
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
-    const token = process.env.GITHUB_TOKEN,
-          repo  = process.env.GITHUB_REPO,
-          owner = process.env.GITHUB_OWNER;
-    //const { owner, repo } = process.env.GITHUB_REPOSITORY.split( '/' );
+    const token = process.env.GITHUB_TOKEN;
+    const repos = process.env.GITHUB_REPOSITORY.split( '/' ),
+          owner = repos[0],
+          repo  = repos[1];
 
     console.log( 'asdadfasd', token, owner, repo, process.env.GITHUB_REPOSITORY )
 
