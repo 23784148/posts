@@ -1,0 +1,21 @@
+{
+  "name": "isslog_actions",
+  "description": "Isslog Actions",
+  "version": "1.0.0",
+  "author": "Kenshin Wang <kenshin@ksria.com>",
+  "homepage": "https://isslog.blog",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kenshin/isslog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kenshin/isslog/issues",
+    "email": "kenshin@ksria.com"
+  },
+  "dependencies": {
+    "@octokit/core": "^4.2.0",
+    "axios": "^1.4.0",
+    "fs": "^0.0.1-security",
+    "rss": "^1.2.2"
+  }
+}
