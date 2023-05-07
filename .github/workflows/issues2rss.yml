@@ -21,6 +21,9 @@ jobs:
 
       - name: Run script to convert issue to RSS
         run: node issues2rss.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
 
       - name: Commit and push changes
         run: |
