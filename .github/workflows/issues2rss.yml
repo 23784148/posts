@@ -20,7 +20,7 @@ jobs:
         run: npm ci
 
       - name: Run script to convert issue to RSS
-        run: node issuestorss.js
+        run: node issues2rss.js
 
       - name: Commit and push changes
         run: |

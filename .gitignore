@@ -139,3 +139,5 @@ dmypy.json
 # client
 
 **/node_modules/**
+
+.vscode/**
