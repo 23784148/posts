@@ -11,7 +11,7 @@ const axios = require( 'axios' );
           owner = repos[0],
           repo  = repos[1];
 
-    console.log( 'asdadfasd', token, owner, repo, process.env.TOKEN, process.env.OWNER, process.env.REPO )
+    console.log( 'asdadfasd', token, owner, repo, process.env.TOKEN, process.env.OWNER, process.env.REPO, process.env.MY_VARIABLE )
 
     /*
     const {
@@ -81,7 +81,7 @@ const axios = require( 'axios' );
     issues.forEach( issue => {
         feed.item({
             title: issue.title,
-            description: issue.body,
+            description: issue.bodyHTML,
             url: issue.html_url,
             author: issue.user.login,
             date: issue.created_at,
