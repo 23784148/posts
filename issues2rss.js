@@ -9,7 +9,7 @@ const axios = require( 'axios' );
     const token = process.env.GITHUB_TOKEN;
     const { owner, repo } = process.env.GITHUB_REPOSITORY.split( '/' );
 
-    console.log( 'asdadfasd', token, owner, repo )
+    console.log( 'asdadfasd', token, owner, repo, process.env.GITHUB_REPOSITORY )
 
     /*
     const {
