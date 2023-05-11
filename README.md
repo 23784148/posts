@@ -1,2 +1,0 @@
-# posts
-Personal blog posts
